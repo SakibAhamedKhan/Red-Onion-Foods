@@ -7,12 +7,12 @@ import logo from "../../../images/logo.png";
 const Header = () => {
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed='top'>
         <Container>
           <Navbar.Brand as={Link} to="/home">
             <img height={40} src={logo} alt="" />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" className="border-1 border-warning" />
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" className="border-2 border-danger" />
 
           <Navbar.Collapse id="responsive-navbar-nav" className="">
             <Nav className="ms-auto">
@@ -20,7 +20,7 @@ const Header = () => {
                 <FiShoppingCart></FiShoppingCart>
               </button>
 		  	  <button className="btn text-light d-block mx-auto me-lg-2 my-1 my-lg-0">Login</button>
-		  	  <button className="btn btn-warning d-block mx-auto px-3 my-1 my-lg-0 rounded-pill">Signup</button>
+		  	  <button className="btn btn-danger d-block mx-auto px-3 my-1 my-lg-0 rounded-pill">Signup</button>
             </Nav>
           </Navbar.Collapse>
         </Container>

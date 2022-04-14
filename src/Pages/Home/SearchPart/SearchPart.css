@@ -1,0 +1,14 @@
+.search-part{
+	top:40%;
+}
+.search-box{
+	width: 350px;
+}
+.search-field{
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.search-btn{
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
