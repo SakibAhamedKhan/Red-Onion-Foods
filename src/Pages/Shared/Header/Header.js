@@ -7,7 +7,7 @@ import logo from "../../../images/logo.png";
 const Header = () => {
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed='top'>
+      <Navbar collapseOnSelect expand="lg" bg="dark" fixed="top" variant="dark">
         <Container>
           <Navbar.Brand as={Link} to="/home">
             <img height={40} src={logo} alt="" />
@@ -25,6 +25,7 @@ const Header = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+	  
     </div>
   );
 };

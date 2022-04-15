@@ -6,8 +6,9 @@ import SearchPart from '../SearchPart/SearchPart';
 const Home = () => {
 	return (
 		<div>
-			<Header></Header>
+			
 			<SearchPart></SearchPart>
+			
 		</div>
 	);
 };
