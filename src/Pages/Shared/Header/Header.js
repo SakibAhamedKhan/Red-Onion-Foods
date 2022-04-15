@@ -51,7 +51,7 @@ const Header = () => {
               }
               {
                 user ?
-                <button onClick={handleSignout} className="btn text-light d-block mx-auto me-lg-2 my-1 my-lg-0">Sign  out</button>
+                <button onClick={handleSignout} className="btn btn-danger text-light d-block mx-auto me-lg-2 my-2 my-lg-0 ms-lg-2">Sign out</button>
                 :
                 <>
                   <button onClick={handleNavigateLogin} className="btn text-light d-block mx-auto me-lg-2 my-1 my-lg-0">Login</button>

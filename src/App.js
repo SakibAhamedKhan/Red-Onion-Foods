@@ -5,7 +5,6 @@ import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
-import Header2 from './Pages/Shared/Header2/Header2';
 import Loading from './Pages/Shared/Loading/Loading';
 import Signup from './Pages/Signup/Signup';
 

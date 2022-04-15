@@ -1,0 +1,45 @@
+[
+	{
+		"id": 1,
+		"name": "Baked Chicken",
+		"title": "How we dream about our future",
+		"price": "9.99",
+		"image":"https://raw.githubusercontent.com/SakibAhamedKhan/Red-Onion-Foods/main/src/images/dinner/dinner1.png"
+	},
+	{
+		"id": 2,
+		"name": "Lemony Salmon Piccata",
+		"title": "How we dream about our future",
+		"price": "10.99",
+		"image":"https://raw.githubusercontent.com/SakibAhamedKhan/Red-Onion-Foods/main/src/images/dinner/dinner2.png"
+		
+	},
+	{
+		"id": 3,
+		"name": "Garlic Butter Baked Salmon",
+		"title": "How we dream about our future",
+		"price": "12.99",
+		"image":"https://raw.githubusercontent.com/SakibAhamedKhan/Red-Onion-Foods/main/src/images/dinner/dinner3.png"
+	},
+	{
+		"id": 4,
+		"name": "French fries with cheese",
+		"title": "How we dream about our future",
+		"price": "8.99",
+		"image":"https://raw.githubusercontent.com/SakibAhamedKhan/Red-Onion-Foods/main/src/images/dinner/dinner4.png"
+	},
+	{
+		"id": 5,
+		"name": "Pork Tenderloin With Quninoa Pilaf",
+		"title": "How we dream about our future",
+		"price": "6.99",
+		"image":"https://raw.githubusercontent.com/SakibAhamedKhan/Red-Onion-Foods/main/src/images/dinner/dinner5.png"
+	},
+	{
+		"id": 6,
+		"name": "Salmon with Grapefruit and Lentil Salad",
+		"title": "How we dream about our future",
+		"price": "9.99",
+		"image":"https://raw.githubusercontent.com/SakibAhamedKhan/Red-Onion-Foods/main/src/images/dinner/dinner6.png"
+	}
+]

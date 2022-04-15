@@ -1,0 +1,45 @@
+[
+	{
+		"id": 1,
+		"name": "Egg Benedict",
+		"title": "How we dream about our future",
+		"price": "8.99",
+		"image":"https://raw.githubusercontent.com/SakibAhamedKhan/Red-Onion-Foods/main/src/images/breakfast/breakfast1.png"
+	},
+	{
+		"id": 2,
+		"name": "Breakfast sandwich",
+		"title": "How we dream about our future",
+		"price": "9.99",
+		"image":"https://raw.githubusercontent.com/SakibAhamedKhan/Red-Onion-Foods/main/src/images/breakfast/breakfast2.png"
+		
+	},
+	{
+		"id": 3,
+		"name": "Baked Chicken",
+		"title": "How we dream about our future",
+		"price": "10.99",
+		"image":"https://raw.githubusercontent.com/SakibAhamedKhan/Red-Onion-Foods/main/src/images/breakfast/breakfast3.png"
+	},
+	{
+		"id": 4,
+		"name": "Bagel and cream cheese",
+		"title": "How we dream about our future",
+		"price": "6.99",
+		"image":"https://raw.githubusercontent.com/SakibAhamedKhan/Red-Onion-Foods/main/src/images/breakfast/breakfast4.png"
+	},
+	{
+		"id": 5,
+		"name": "Full Breakfast Fried Egg Toast Brunch",
+		"title": "How we dream about our future",
+		"price": "3.99",
+		"image":"https://raw.githubusercontent.com/SakibAhamedKhan/Red-Onion-Foods/main/src/images/breakfast/breakfast5.png"
+	},
+	{
+		"id": 6,
+		"name": "Toast Croissant Fried egg",
+		"title": "How we dream about our future",
+		"price": "19.99",
+		"image":"https://raw.githubusercontent.com/SakibAhamedKhan/Red-Onion-Foods/main/src/images/breakfast/breakfast6.png"
+	}
+]
