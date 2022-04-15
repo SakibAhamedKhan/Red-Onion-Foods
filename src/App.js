@@ -6,12 +6,12 @@ import Login from './Pages/Login/Login';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import Header2 from './Pages/Shared/Header2/Header2';
+import Loading from './Pages/Shared/Loading/Loading';
 import Signup from './Pages/Signup/Signup';
 
 function App() {
   return (
     <div>
-      
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
