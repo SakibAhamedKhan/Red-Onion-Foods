@@ -1,0 +1,14 @@
+.login-container{
+	padding-top: 70px;
+	background-color: #ffffff;
+}
+.login input{
+	display: block;
+	margin: 20px 0;
+	width: 300px;
+	outline: none;
+	padding: 8px 10px;
+	background-color: #F5F5F5;
+	border: 1px solid rgb(223, 222, 222);
+	border-radius: 5px;
+}

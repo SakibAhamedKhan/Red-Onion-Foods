@@ -3,18 +3,19 @@
 	height: 100vh;
 }
 .search-part{
-	top:45%;
+	top:43%;
 }
 .search-box{
-	width: 350px;
+	width: 300px;
+	margin-right: -25px;
+	outline: none;
 }
-.search-field{
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
-}
+
 .search-btn{
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
+	margin-left: -25px;
+}
+::-webkit-input-placeholder{
+	color: rgb(195, 10, 10);
 }
 
 @media screen and (max-width: 1000px) {

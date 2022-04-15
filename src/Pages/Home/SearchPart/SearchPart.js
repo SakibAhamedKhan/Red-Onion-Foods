@@ -34,18 +34,10 @@ const SearchPart = () => {
 			</div>
 			<div className='position-absolute w-100 search-part'>
 				<h2 className='text-center'>Best Testy Food Waiting For You!</h2>
-				<InputGroup className="mb-3 search-box mx-auto my-4">
-					<FormControl
-					placeholder="Recipient's username"
-					aria-label="Recipient's username"
-					aria-describedby="basic-addon2"
-					className='search-field ps-3'
-					/>
-					
-					<Button variant="outline-danger" id="button-addon2" className='search-btn btn-danger text-light px-3'>
-					Button
-					</Button>
-  				</InputGroup>
+				<div className='d-flex justify-content-center mt-3'>
+				<input type="text" className='search-box ps-3 rounded-pill border-0' placeholder='Search food items'/>
+				<button className='btn btn-danger rounded-pill search-btn px-4'>Search</button>
+				</div>
 			</div>
 		</div>
 	);
