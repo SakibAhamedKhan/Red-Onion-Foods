@@ -2,7 +2,7 @@
 	padding-top: 70px;
 	background-color: #ffffff;
 }
-.login input{
+.login input:not([type='checkbox']){
 	display: block;
 	margin: 20px 0;
 	width: 300px;
