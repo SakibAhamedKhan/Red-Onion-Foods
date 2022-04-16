@@ -23,8 +23,8 @@ const getStoredCart =  () => {
 	if(storedCart){
 		orderCart = JSON.parse(storedCart);
 	}
-	let result = Object.keys(orderCart).map((key) => [Number(key), orderCart[key]]);
-	return result;
+	// let result = Object.keys(orderCart).map((key) => [Number(key), orderCart[key]]);
+	return orderCart;
 }
 
 export {

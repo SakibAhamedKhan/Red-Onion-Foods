@@ -31,6 +31,9 @@ const Header = () => {
   //   return <Loading></Loading>;
   // }
 
+  const handleCartBtn = () => {
+    navigate('/cart');
+  }
   const handleNavigateLogin = () => {
     navigate('/login');
   }
@@ -40,6 +43,7 @@ const Header = () => {
   const handleSignout = () => {
     signOut(auth);
   }
+
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" fixed="top" variant="dark">
@@ -51,11 +55,11 @@ const Header = () => {
 
           <Navbar.Collapse id="responsive-navbar-nav" className="">
             <Nav className="ms-auto">
-              <button type="button" class="btn btn-dark position-relative fw-bold d-block mx-auto me-lg-4 my-1 my-lg-0">
+              <button type="button" onClick={handleCartBtn} className="btn btn-dark position-relative fw-bold d-block mx-auto me-lg-4 my-1 my-lg-0">
                   <FiShoppingCart className="fs-4"></FiShoppingCart>
-                  <span style={{top:'10%', left:'95%'}} class="position-absolute fs-5  translate-middle badge rounded-pill bg-transparent">
+                  <span style={{top:'10%', left:'95%'}} className="position-absolute fs-5  translate-middle badge rounded-pill bg-transparent">
                     {Object.keys(cart).length}
-                    <span class="visually-hidden">unread messages</span>
+                    <span className="visually-hidden">unread messages</span>
                   </span>
               </button>
               {
