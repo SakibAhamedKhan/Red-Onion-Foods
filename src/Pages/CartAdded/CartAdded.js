@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { getStoredCart } from '../../utilities/dbControl';
 import Cart from '../Cart/Cart';
 import Header from '../Shared/Header/Header';
+import Loading from '../Shared/Loading/Loading';
 import './CartAdded.css'
 
 const CartAdded = () => {
@@ -9,31 +10,25 @@ const CartAdded = () => {
 	const [data1, setData1] = useState([]);
 	const [final, setFinal] = useState([]);
 	useEffect(() => {
-		const fetchData = async () => {
-			function sleep(ms) {
-				return new Promise(resolve => setTimeout(resolve, ms));
-			}
-			await sleep(1000);
-			const d = await fetch('/food-all-data.json');
-			const js = await d.json();
-			return js;
-		}
-		const result = fetchData()
-		.then(value => setData1(value))	
-		console.log(data1);
+		fetch('https://raw.githubusercontent.com/SakibAhamedKhan/Red-Onion-Foods/main/public/food-all-data.json')
+		.then(res => res.json())
+		.then(data => setData1(data))
 	},[]);
 
 	useEffect(()=>{
+		console.log(data1);
 		// const temp = data.map(d => {
 		// 	return data1.find(d1 => parseInt(d1.id) === d[0] );
 		// });
-		// let arr = [];
-		// for(let key in data){
-		// 	const temp = data1.find(d => d.id === parseInt(key));
-		// 	arr.push(temp);
-		// }
-		// setFinal(arr);
-		// // console.log(final);
+		let arr = [];
+		console.log(data1);
+		for(let key in data){
+			const temp = data1.find(d => d.id === parseInt(key));
+			arr.push(temp);
+		}
+		console.log(arr);
+		setFinal(arr);
+		console.log(final);
 		// console.log(data1);
 		// console.log(data);	
 	},[data1]);
@@ -44,13 +39,24 @@ const CartAdded = () => {
 			<Header></Header>
 			<div style={{marginTop:'100px'}} className='container'>
 				<h3 className='text-center'>All Added to Cart items : {data.length}</h3>
+				<div className='carts'>
 				{
-					final.map( d => <Cart
-						key={d.id}
+					// final?
+					// (final.map( d => <Cart
+					// 	key={d?.id}
+					// 	data={d}
+					// ></Cart>))
+					// :
+					// ''
+					(final[0]===undefined)?
+					<Loading></Loading>
+					: final.map(d=> <Cart
+						key={d?.id}
 						data={d}
 						data1={data}
 					></Cart>)
 				}
+				</div>
 			</div>
 		</div>
 	);
