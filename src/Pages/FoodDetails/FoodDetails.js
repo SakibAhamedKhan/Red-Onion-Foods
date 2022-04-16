@@ -1,20 +1,26 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Footer from '../Shared/Footer/Footer';
 import Header from '../Shared/Header/Header';
 import './FoodDetail.css'
 import { BiPlus,BiMinus } from "react-icons/bi";
 import { FiShoppingCart } from "react-icons/fi";
-
+import { addToDb } from '../../utilities/dbControl';
+import { GrPrevious } from "react-icons/gr";
+import { MdArrowForwardIos } from "react-icons/md";
 
 const FoodDetails = () => {
 	const {foodId, type} = useParams();
 	const [count, setCount] = useState(1);
 	const [data, setData] = useState([]);
 	const [data2, setData2] = useState([]);
+	const [add, setAdd] = useState([]);
+	const [index, setIndex] = useState(0);
 	const [activeBreakfast, setActiveBreakfast] = useState(false);
 	const [activeLunch, setActiveLunch] = useState(false);
 	const [activeDinner, setActiveDinner] = useState(false);
+
+	const navigate = useNavigate();
 	
 	useEffect(()=>{
 		const finded = data.find(d => d.id === parseInt(foodId));
@@ -47,7 +53,7 @@ const FoodDetails = () => {
 			setActiveLunch(false);
 			setActiveDinner(true);
 		}
-	},[]);
+	},[foodId]);
 
 	const handleNumberOfAddField = (event) =>{
 		console.log(event.target.value);
@@ -59,6 +65,37 @@ const FoodDetails = () => {
 		}
 	}
 	
+	const handleAddToCart = () => {
+		addToDb(data2.id, count);
+		navigate('/home');
+		// this.forceUpdate();
+		// navigate(`/food/${foodId}/${type}`);
+	}
+
+	const checkIndex = (index) => {
+		if(index<0){
+			return data.length-1;
+		} 
+		if(index> data.length -1){
+			return 0;
+		}
+		return index;
+	}
+	const handlePrev = () => {
+		let i = index - 1;
+		setIndex(checkIndex(i));
+	}
+
+	const handleFor = () => {
+		let i= index + 1;
+		setIndex(checkIndex(i));
+	}
+
+	const handleImgSelect = () => {
+		const fId = data[index]?.id;
+		navigate(`/food/${fId}/${type}`);
+	}
+
 	return (
 		<div className=''>
 			<Header></Header>
@@ -92,7 +129,12 @@ const FoodDetails = () => {
 								}} className='btn border-none rounded-pill'><BiPlus></BiPlus></button>
 							</div>
 						</div>
-						<button className='btn btn-danger d-flex justify-content-center align-items-center px-4 py-2 rounded-pill my-4'><FiShoppingCart className='me-3'></FiShoppingCart><span className='m-0'>Add</span></button>
+						<button onClick={handleAddToCart} className='btn btn-danger d-flex justify-content-center align-items-center px-4 py-2 rounded-pill my-4'><FiShoppingCart className='me-3'></FiShoppingCart><span className='m-0'>Add</span></button>
+						<div className='my-5'>
+							<button onClick={() => handlePrev()} className='btn btn-transparent'><GrPrevious></GrPrevious></button>
+							<img style={{cursor:'pointer'}} onClick={() => handleImgSelect()} className='mx-3' height={200} src={data[index]?.image} alt="" />
+							<button onClick={handleFor} className='btn btn-transparent'><MdArrowForwardIos></MdArrowForwardIos></button>
+						</div>
 					</div>
 					<div>
 						<img height={500} src={data2?.image} alt="" />
