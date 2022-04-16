@@ -18,9 +18,32 @@
 	color: rgb(195, 10, 10);
 }
 
-@media screen and (max-width: 1000px) {
-	
-	.background{
-		background-color: #FCF4E0;
+@media screen and (max-width: 410px) {
+	.cover-img5 img{
+		height: 60px;
 	}
+	.cover-img6 img{
+		height: 90px;
+	}
+}
+@media screen and (max-width: 300px) {
+	.cover-img1 img{
+		height: 90px;
+	}
+	.cover-img2 img{
+		height: 50px;
+	}
+	.cover-img3 img{
+		height: 70px;
+	}
+	.cover-img4 img{
+		height: 90px;
+	}
+	.cover-img5 img{
+		height: 40px;
+	}
+	.cover-img6 img{
+		height: 90px;
+	}
+	
 }

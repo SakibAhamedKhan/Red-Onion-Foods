@@ -14,22 +14,22 @@ const SearchPart = () => {
 			<div className='position-relative background'>
 				
 			</div>
-			<div style={{top:'85%',left:'15%'}} className='position-absolute'>
+			<div style={{top:'85%',left:'15%'}} className='position-absolute cover-img1'>
 				<img style={{transform: 'rotate(20deg)'}} height={90} src={icon1} alt="" />
 			</div>
-			<div style={{top:'80%',left:'72%'}} className='position-absolute'>
+			<div style={{top:'80%',left:'72%'}} className='position-absolute cover-img2'>
 				<img src={icon2} alt="" />
 			</div>
-			<div style={{top:'10%',left:'58%'}} className='position-absolute'>
+			<div style={{top:'10%',left:'58%'}} className='position-absolute cover-img3'>
 				<img src={icon2} alt="" />
 			</div>
-			<div style={{top:'60%',left:'38%'}} className='position-absolute'>
+			<div style={{top:'60%',left:'38%'}} className='position-absolute cover-img4'>
 				<img height={150} src={icon3} alt="" />
 			</div>
-			<div style={{top:'20%',left:'78%'}} className='position-absolute'>
+			<div style={{top:'20%',left:'78%'}} className='position-absolute cover-img5'>
 				<img height={80} src={icon4} alt="" />
 			</div>
-			<div style={{top:'22%',left:'5%'}} className='position-absolute'>
+			<div style={{top:'22%',left:'5%'}} className='position-absolute cover-img6'>
 				<img style={{transform: 'rotate(-20deg)'}} height={130} src={icon5} alt="" />
 			</div>
 			<div className='position-absolute w-100 search-part'>

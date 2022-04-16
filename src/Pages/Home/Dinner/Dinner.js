@@ -16,6 +16,7 @@ const Dinner = () => {
 				data.map(d => <Food
 					key={d.id}
 					data={d}
+					food={'dinner'}
 				></Food>)
 			}
 		</div>

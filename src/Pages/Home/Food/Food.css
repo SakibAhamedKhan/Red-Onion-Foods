@@ -15,3 +15,15 @@
 .food-title{
 	color: rgb(117, 116, 116);
 }
+
+
+@media screen and (max-width: 750px) {
+	.food{
+		width: 300px;
+	}
+}
+@media screen and (max-width: 420px) {
+	.food{
+		width: 280px;
+	}
+}
